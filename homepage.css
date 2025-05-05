@@ -1,0 +1,74 @@
+body{
+    margin: -10;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom right, #36655e, #add6c5);
+}
+
+@font-face {
+    font-family:Poppins;
+    src: url('Poppins/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family:Poppins-Bold;
+    src: url('Poppins/Poppins-SemiBold.ttf');
+}
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        font-family:Poppins;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        gap: 50px;
+    }
+        .logo{
+            color: white;
+            font-size: 20px;
+        }
+
+        .header-links{
+        display: flex;
+        gap: 130px;
+        }
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 23px;
+    }
+
+    .first-content{
+        justify-content: space-around;
+        display:flex;
+        align-items: center;
+        font-family:Poppins;
+    }
+        .first-content-elements{
+            display: flex;
+            flex-direction: column;
+            padding-left: 70px;
+        }
+
+        .circle-line{
+            background-color: white;
+        }
+
+        .learn-more-button{
+            font-size: 25px;
+            color: white;
+            background-color: transparent;
+            padding: 10px;
+            border: 4.7px solid white;
+            border-radius: 30px;
+            width: 230px;
+        }
+
+        img{
+            height: auto;
+            width: auto;
+        }
+
+        
