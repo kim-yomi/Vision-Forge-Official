@@ -1,8 +1,12 @@
+
+
+
 body{
-    margin: -10;
-    height: 100vh;
+    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to bottom right, #36655e, #add6c5);
+    background-size: cover;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -19,41 +23,37 @@ body{
         display: flex;
         justify-content: space-between;
         font-family:Poppins;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 20px;
-        gap: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 20px;
     }
-        .logo{
-            color: white;
-            font-size: 20px;
-        }
+        
 
         .header-links{
         display: flex;
         gap: 130px;
+        text-align: center;
+        justify-content: center;
         }
 
     a{
         text-decoration: none;
         color: white;
         font-size: 23px;
+        text-align: center;
     }
 
     .first-content{
-        justify-content: space-around;
         display:flex;
-        align-items: center;
         font-family:Poppins;
+        padding-top: 100px;
+        justify-content: space-between;
     }
         .first-content-elements{
+            padding-left: 50px;
             display: flex;
-            flex-direction: column;
-            padding-left: 70px;
-        }
-
-        .circle-line{
-            background-color: white;
+            flex-direction: column ;
+            justify-content: center;
         }
 
         .learn-more-button{
@@ -71,4 +71,34 @@ body{
             width: auto;
         }
 
+        .ruler{
+        }
+
+        .title{
+            color:white;
+            font-family: Poppins-Bold;
+            font-size: 88.5px;
+            font-weight: bold;
+            line-height: 0.9;
+        }
+        .subtitle{
+            color:white;
+            font-family: Poppins-Bold;
+            font-size: 88.5px;
+            font-weight: bold;
+            line-height: 0.9;
+            display: flex;
+            gap: 15px;
+        }
+
+        .dots{
+            width: 57%;
+
+        }
+
+        .logo{
+            width: 100px;
+            height: auto;
+        }
         
+
