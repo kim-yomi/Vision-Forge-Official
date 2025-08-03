@@ -1,12 +1,16 @@
-
-
-
+html{
+    scroll-behavior: smooth;
+}
+*{
+    outline: red solid 1px;
+}
 body{
-    min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to bottom right, #36655e, #add6c5);
+    background-color: #56786a;
     background-size: cover;
     overflow-x: hidden;
+    margin: 0;
 }
 
 @font-face {
@@ -15,20 +19,27 @@ body{
 }
 
 @font-face {
-    font-family:Poppins-Bold;
+    font-family:Poppins-ExtraBold;
+    src: url('Poppins/Poppins-ExtraBold.ttf');
+}
+
+@font-face{
+    font-family: Poppins-SemiBold;
     src: url('Poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face{
+    font-family: Poppins-BoldItalic;
+    src: url('Poppins/Poppins-BoldItalic.ttf');
 }
 
     .header{
         display: flex;
         justify-content: space-between;
-        font-family:Poppins;
-        margin-left: 50px;
-        margin-right: 50px;
-        margin-top: 20px;
+        font-family:Poppins-ExtraBold;
+        position: fixed;
+        width: 100%;
     }
-        
-
         .header-links{
         display: flex;
         gap: 130px;
@@ -38,16 +49,20 @@ body{
 
     a{
         text-decoration: none;
-        color: white;
+        color: #163B37;
         font-size: 23px;
         text-align: center;
+        display: flex;
+        align-items: center;
+        text-wrap: nowrap;
     }
 
     .first-content{
         display:flex;
         font-family:Poppins;
         padding-top: 100px;
-        justify-content: space-between;
+        justify-content: center;
+        padding-bottom: 100px;
     }
         .first-content-elements{
             padding-left: 50px;
@@ -76,14 +91,14 @@ body{
 
         .title{
             color:white;
-            font-family: Poppins-Bold;
+            font-family: Poppins-ExtraBold;
             font-size: 88.5px;
             font-weight: bold;
             line-height: 0.9;
         }
         .subtitle{
             color:white;
-            font-family: Poppins-Bold;
+            font-family: Poppins-ExtraBold;
             font-size: 88.5px;
             font-weight: bold;
             line-height: 0.9;
@@ -92,13 +107,169 @@ body{
         }
 
         .dots{
-            width: 57%;
+            width: 54.9%;
 
         }
 
         .logo{
             width: 100px;
             height: auto;
+            padding-right: 20px;
         }
-        
 
+    .second-section{
+        text-align: center;
+    }
+
+        .second-title{
+            font-family: Poppins-SemiBold;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+        }
+
+        .dialogue-box{
+            margin-top: 35px;
+            font-family: Poppins;
+            color: white;
+            font-size: 20px;
+            margin-left: 70px;
+            margin-right: 70px;
+            text-align: center;
+        }
+
+        .dialogue-box-container{
+            display: flex;
+            justify-content: center;
+            gap: 120px;
+        }
+
+        .dialogue-box-1{
+            flex-shrink: 0;
+            margin-top: 70px;
+            width: 330px;
+            height: 380px;
+            text-align: center;
+            background-color: #EDF2F1;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .dialogue-box-1-title{
+            font-family: Poppins-ExtraBold;
+            font-size: 25px;
+            color: #335036;
+            margin-top: 20px;
+        }
+
+        .dialogue-box-1-text{
+            font-family: Poppins;
+            font-size: 20px;
+            color: #335036;
+        }
+
+        .third-section{
+            display: flex;
+            justify-content: center;
+        }
+
+        .dialogue-box-2{
+            width: 800px;
+            height: 580px;
+            text-align: center;
+            background-color: #466C65;
+            border-radius: 45px;
+            flex-shrink: 0;
+            padding: 23px;
+        }
+
+        .dialogue-box-2-title{
+            font-family: Poppins-SemiBold;
+            font-size: 35px;
+            color: #EDF2F1;
+        }
+
+        .dialogue-box-2-text{
+            font-family: Poppins;
+            font-size: 19px;
+            margin-top: 20px;
+            color: #EDF2F1;
+        }
+
+        .about-vf-logo{
+            width: 200px;
+            height: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .fourth-section{
+            margin-top: 200px;
+        }
+
+        .team-title{
+            font-family: Poppins-SemiBold;
+            font-size: 50px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .team-members{
+            gap: 45px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .team-member-name{
+            font-family: Poppins-ExtraBold;
+            font-size: 25px;
+            color: white;
+            text-wrap: nowrap;
+        }
+
+        .team-member-role{
+            font-family: Poppins-BoldItalic;
+            font-size: 20px;
+            color: #3D645D;
+        }
+
+        .third-title{
+            font-family: Poppins-SemiBold;
+            font-size: 40px;
+            color: #335036;
+            text-align: center;
+        }
+
+        .fifth-section{
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .fifth-section-elements{
+            background-color: white;
+            width: 500px;
+            justify-content: center;
+            border-radius: 20px;
+            padding: 15px;
+        }
+
+        .contact-us-text{
+            font-family: Poppins;
+            font-size: 20px;
+            color: #335036;
+        }
+
+        .footer{
+            margin-bottom: 200px;
+        }
+
+        .home-scroll-here{
+            height: 93px;
+        }
+
+        .about-scroll-here{
+            height: 90px;
+        }

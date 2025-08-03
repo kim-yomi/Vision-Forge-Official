@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vision Forge</title>
     <link rel = "stylesheet" href="homepage.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once:true
+      });
+    </script>
   </head>
   <body>
       <div class = "first-section">
         <div class = "header">
           <img class = "logo" src = "vision_forge_logo.svg">
           <div class = "header-links">
-            <a href = "home.html">Home</a>
-            <a href = "about.html">About</a>
+            <a href = "#home-scroll-here">Learn More</a>
+            <a href = "#about-scroll-here">About</a>
             <a href = "contact.html">Contact Us</a>
           </div>
         </div>
@@ -26,11 +33,82 @@
             </div>
             <img class = "dots" src="dot.svg">
             <div style = color:white;font-size:25px;padding-bottom:50px;padding-top:50px>Your all-in-one measurement tool.</div>
-            <button class = "learn-more-button">LEARN MORE</button>
+            <!--<button class = "learn-more-button">LEARN MORE</button>-->
           </div>
             <img class = "ruler" src="ruler.svg">
         </div>
       </div>
+      <div class = "home-scroll-here" id="home-scroll-here"></div>
+      <div class = "second-section">
+        <div class = "second-title">Every ruler you ever needed - all in one tool.</div>
+      </div>
 
+      <div class = "dialogue-box">
+        The Dotted Ruler is an all-in-one measurement tool that combines the functions of a protractor, a ruler, a margin guide,
+        and is designed with small circular holes with a .5 inch gap in-between.
+      </div>
+      <div class = "dialogue-box-container">
+      <div class = "dialogue-box-1">
+        <p class = "dialogue-box-1-title">Dotted Holes and Margin Guide</p>
+        <p class = "dialogue-box-1-text">The ruler is laser-cut with small, tiny holes with half an inch gap in between.
+        This makes more precise perspective drawing from different points with varying distances, all while being accurate in measurement.</p>
+      </div>
+      <div class = "dialogue-box-1">
+        <p class = "dialogue-box-1-title">Built-in Compass<br>and Protractor</p>
+        <p class = "dialogue-box-1-text">Easily draw circles and angles with the built-in compass and protractor. Simply use two pens - one for
+        the center and one for the radius - to draw circles, or use the protractor to measure angles accurately.</p>
+        
+      </div>
+      <div class = "dialogue-box-1">
+        <p class = "dialogue-box-1-title">Portability and Convenience</p>
+        <p class = "dialogue-box-1-text">The dotted ruler is an all-in-one ruler that encompasses the function of a compass, protractor,
+           and many more functions into an A4-sized measurement tool that can be carried anywhere, anytime.</p>
+      </div>
+    </div>
+    <div class = "about-scroll-here" id="about-scroll-here"></div>
+    <div class = "third-section">
+      <div class = "dialogue-box-2">
+        <div class = "dialogue-box-2-title">About Vision Forge</div>
+        <img class = "about-vf-logo" src="vision_forge_logo.svg">
+        <div class = "dialogue-box-2-text">Vision Forge is a startup founded by Lander Azarcon, a 4th year Computer Engineering student at FEU TECH 
+          who got the idea for the dotted ruler once when trying to design a circuit board for one of his computer engineering classes. He pierced 
+          holes using plastic, and from there it evolved to the dotted ruler that you see now – with the same function of designing a circuit board, 
+          but now enhanced with more functions.<br><br>Vision Forge are currently incubatees for the ongoing TamLabs startup incubation program at the 
+          FEU TECH Innovation Center, with the end goal of becoming a homegrown successful start-up company.</div>
+      </div>
+    </div>
+    <div class = "fourth-section">
+        <div class = "team-title">The Team</div>
+        <div class = "team-members">
+          <div class = "team-member">
+            <img class = "team-member-image" src="Team/1.png">
+            <div class = "team-member-name">Lander Joshua O.<br> Azarcon</div>
+            <div class = "team-member-role">Founder and CEO</div>
+          </div>
+          <div class = "team-member">
+            <img class = "team-member-image" src="Team/2.png">
+            <div class = "team-member-name">Genro Gabriel D.<br> Baldemoro</div>
+            <div class = "team-member-role">Co-Founder and BI Lead</div>
+          </div>
+          <div class = "team-member">
+            <img class = "team-member-image" src="Team/3.png">
+            <div class = "team-member-name">Sabrina J. Bautista</div>
+            <div class = "team-member-role">Co-Founder and COO</div>
+          </div>
+          <div class = "team-member">
+            <img class = "team-member-image" src="Team/4.png">
+            <div class = "team-member-name">Chorong D. Kim</div>
+            <div class = "team-member-role">Co-Founder and CMO</div>
+          </div>
+    </div>
+    </div>
+    <div class = "fifth-section">
+      <div class = "fifth-section-elements">
+      <div class = "third-title">Contact Us</div>
+      <div class = "contact-us-text">Email: visionforge@gmail.com<br>Phone: +63 993 732 5474<br>Address: P. Paredes St., Sampaloc, Manila</div>
+      </div>
+      </div>
+      <div class = "footer">
+        </div>
   </body>
 </html>
