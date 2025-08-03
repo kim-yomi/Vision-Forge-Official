@@ -2,7 +2,6 @@ html{
     scroll-behavior: smooth;
 }
 
-
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to bottom right, #36655e, #add6c5);
@@ -32,18 +31,19 @@ body{
     src: url('Poppins/Poppins-BoldItalic.ttf');
 }
 
+
     .header{
         display: flex;
         justify-content: space-between;
         font-family:Poppins-ExtraBold;
         position: fixed;
-        width: 100%;
+        padding: 10px;
     }
         .header-links{
         display: flex;
-        gap: 100px;
         text-align: center;
         justify-content: center;
+        gap: 100px;
         }
 
     a{
@@ -64,10 +64,16 @@ body{
         padding-bottom: 100px;
     }
         .first-content-elements{
-            padding-left: 50px;
             display: flex;
             flex-direction: column ;
             justify-content: center;
+        }
+
+        .subtitle-2{
+            color:white;
+            font-size:25px;
+            padding-bottom:50px;
+            padding-top:50px;
         }
 
         .learn-more-button{
@@ -82,7 +88,8 @@ body{
 
         img{
             height: auto;
-            width: auto;
+            max-width: 100%;
+            display: block;
             padding: 10px;
         }
 
@@ -103,11 +110,10 @@ body{
             font-weight: bold;
             line-height: 0.9;
             display: flex;
-            gap: 15px;
         }
 
         .dots{
-            width: 54.9%;
+            width: 52%;
 
         }
 
@@ -175,11 +181,10 @@ body{
 
         .dialogue-box-2{
             width: 800px;
-            height: 580px;
+            height: auto;
             text-align: center;
             background-color: #466C65;
             border-radius: 45px;
-            flex-shrink: 0;
             padding: 23px;
         }
 
@@ -199,8 +204,9 @@ body{
         .about-vf-logo{
             width: 200px;
             height: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            margin: 20px auto;
+            display: block;
+            padding: 0;
         }
 
         .fourth-section{
@@ -254,6 +260,7 @@ body{
             justify-content: center;
             border-radius: 20px;
             padding: 15px;
+            text-align: center;
         }
 
         .contact-us-text{
@@ -273,3 +280,44 @@ body{
         .about-scroll-here{
             height: 90px;
         }
+
+@media(max-width: 768px) {
+    .dialogue-box-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-members{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-content{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+
+    }
+
+    .subtitle{
+        flex-direction: column;
+    }
+
+    .first-content-elements{
+        padding-left: 0px;
+    }
+
+    .header-links{
+        gap: 20px;
+    }
+
+    .logo{
+        width: 50px;
+        height: auto;
+    }
+    
+    a{
+        font-size: 19px;
+    }
+
+}
